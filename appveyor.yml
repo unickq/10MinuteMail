@@ -28,7 +28,7 @@ build:
 test:
   assemblies:
     only:
-    - 10minutesMail.net.dll
+    - 10MinutesMail.Net.Tests.dll
 
 
 artifacts:
