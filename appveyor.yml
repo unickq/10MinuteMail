@@ -1,7 +1,7 @@
-version: 0.1.0
+version: 0.1.1
 
 environment:
-  nugetVersion: 0.1.0
+  nugetVersion: 0.1.1
 
 init:
   - ps: Update-AppveyorBuild -Version $env:nugetVersion
@@ -20,7 +20,7 @@ configuration: Release
 platform: Any CPU
 
 before_build:
-- nuget restore 10MinutesMail.sln
+- nuget restore 10MinuteMail.sln
 
 build:
   verbosity: minimal
@@ -28,11 +28,11 @@ build:
 test:
   assemblies:
     only:
-    - 10MinutesMail.Net.Tests.dll
+    - 10MinuteMail.Net.Tests.dll
 
 
 artifacts:
-- path: '**\10minutesMail.*.nupkg'
+- path: '**\10minuteMail.*.nupkg'
 
 for:
 -

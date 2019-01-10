@@ -7,15 +7,15 @@
     <Version>0.1.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Nick Chursin</Authors>
-    <Description>10minutesmail - API for 10minutesmail.net</Description>
-    <PackageId>10minutesMail.net</PackageId>
-    <AssemblyName>10minutesMail.net</AssemblyName>
-    <RootNamespace>10minutesMail.Net</RootNamespace>
+    <Description>10minutemail - API for 10minutemail.net</Description>
+    <PackageId>10minuteMail.net</PackageId>
+    <AssemblyName>10minuteMail.net</AssemblyName>
+    <RootNamespace>10minuteMail.Net</RootNamespace>
     <PackageProjectUrl>https://github.com/unickq/10MinuteMail</PackageProjectUrl>
     <RepositoryUrl>https://github.com/unickq/10MinuteMail</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/unickq/10MinuteMail/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageTags>10minutesMail emails disposable</PackageTags>
-    <PackageIconUrl>https://github.com/unickq/10MinuteMail/master/10MinutesMail.Net/logo.png</PackageIconUrl>
+    <PackageTags>10minuteMail emails disposable</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/unickq/10MinuteMail/master/10MinuteMail.Net/logo.png</PackageIconUrl>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 

@@ -1,8 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
-using _10MinuteMail.Net;
 
-namespace _10MinutesMail.Net.Tests
+namespace _10MinuteMail.Net.Tests
 {
     [TestFixture]
     public class Tests

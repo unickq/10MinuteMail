@@ -7,8 +7,8 @@
     <ProjectGuid>{6E16AB8D-0889-4E69-BBFD-3C2329813F38}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_10MinutesMail.Net.Tests</RootNamespace>
-    <AssemblyName>10MinutesMail.Net.Tests</AssemblyName>
+    <RootNamespace>_10MinuteMail.Net.Tests</RootNamespace>
+    <AssemblyName>10MinuteMail.Net.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\10MinutesMail.Net\10MinutesMail.Net.csproj">
+    <ProjectReference Include="..\10MinuteMail.Net\10MinuteMail.Net.csproj">
       <Project>{3fed1fd8-5dd6-4517-8588-ada8d2973cbc}</Project>
-      <Name>10MinutesMail.Net</Name>
+      <Name>10MinuteMail.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
