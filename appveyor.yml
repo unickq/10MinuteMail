@@ -1,0 +1,44 @@
+version: 0.1.0
+
+environment:
+  nugetVersion: 0.1.0
+
+init:
+  - ps: Update-AppveyorBuild -Version $env:nugetVersion
+
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: $(nugetVersion)
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+
+before_build:
+- nuget restore 10MinutesMail.sln
+
+build:
+  verbosity: minimal
+
+test:
+  assemblies:
+    only:
+    - 10minutesMail.net.dll
+
+
+artifacts:
+- path: '**\10minutesMail.*.nupkg'
+
+for:
+-
+  branches:
+      only:
+        - develop
+  version: 0.2.0-beta{build}
+  environment:
+    nugetVersion: 0.2.0-beta$(APPVEYOR_BUILD_NUMBER)
