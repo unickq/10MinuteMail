@@ -1,24 +1,13 @@
 ﻿using System;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using _10MinuteMail.Net;
 
 namespace _10MinutesMail.Net.Tests
 {
+    [TestFixture]
     public class Tests
     {
         private TenMinuteMailNet _tenMinuteMail;
-
-        public async Task Async()
-        {
-            var t = new TenMinuteMailNet();
-            Console.WriteLine(await t.GetEmailAddressAsync()); //Your current email address
-            Console.WriteLine(await t.GetLastEmailAsync()); //Last email in inbox
-            await t.GenerateNewEmailAddressAsync(); //Generate new inbox
-            Console.WriteLine(await t.GetSecondsLeftAsync()); //Seconds left to use email
-            await t.Reset10MinutesAsync(); //Reset email - add 10 minutes
-            await t.Reset100MinutesAsync(); //Reset email - add 100 minutes
-        }
 
         [SetUp]
         public void SetUp()

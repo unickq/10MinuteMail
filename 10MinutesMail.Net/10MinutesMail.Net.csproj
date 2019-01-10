@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/unickq/10MinuteMail</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/unickq/10MinuteMail/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>10minutesMail emails disposable</PackageTags>
-    <PackageIconUrl>https://github.com/unickq/10MinuteMail/master/logo.png</PackageIconUrl>
+    <PackageIconUrl>https://github.com/unickq/10MinuteMail/master/10MinutesMail.Net/logo.png</PackageIconUrl>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 

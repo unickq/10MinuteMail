@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace _10MinuteMail.Net
 {
-    public class TenMinuteMailNet 
+    public class TenMinuteMailNet
     {
         private const string BaseUrl = "https://10minutemail.net";
         private readonly HttpClient _httpClient;
 
-        /// <summary>Initializes a new instance of the <see cref="TenMinuteMailNet"/> class. https://10minutemail.net - client</summary>
+        /// <summary>Initializes a new instance of the <see cref="TenMinuteMailNet" /> class. https://10minutemail.net - client</summary>
         public TenMinuteMailNet()
         {
             _httpClient = new HttpClient();
@@ -34,7 +34,12 @@ namespace _10MinuteMail.Net
         /// <summary>Gets the email count.</summary>
         /// <value>The email count.</value>
         public int EmailCount => GetEmailsCountAsync().Result;
+
         public MailContent LastEmail => GetLastEmailAsync().Result;
+
+        /// <summary>Gets the emails.</summary>
+        /// <value>The emails.</value>
+        public List<MailContent> Emails => GetEmailsAsync().Result;
 
         /// <summary>Gets the response string.</summary>
         /// <param name="responseUrl">The response URL.</param>
@@ -120,10 +125,6 @@ namespace _10MinuteMail.Net
 
             return mails.ToList();
         }
-
-        /// <summary>Gets the emails.</summary>
-        /// <value>The emails.</value>
-        public List<MailContent> Emails => GetEmailsAsync().Result;
 
         public async Task<MailContent> GetLastEmailAsync()
         {

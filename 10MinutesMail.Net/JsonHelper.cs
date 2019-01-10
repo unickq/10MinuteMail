@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _10MinuteMail.Net
 {
-    public abstract class JsonHelper
+    public static class JsonHelper
     {
         public static string ToJson(object o)
         {
