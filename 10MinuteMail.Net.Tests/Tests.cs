@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using NUnit.Framework;
 
 namespace _10MinuteMail.Net.Tests
@@ -26,6 +27,8 @@ namespace _10MinuteMail.Net.Tests
         public void ValidateReset10Minutes()
         {           
             Console.WriteLine($"Before: {_tenMinuteMail.SecondsLeft}");
+            Thread.Sleep(3000);
+            Console.WriteLine($"After 3 sec wait: {_tenMinuteMail.SecondsLeft}");
             Console.WriteLine("Resetting 10 minutes");
             _tenMinuteMail.Reset10Minutes();
             Console.WriteLine($"After: {_tenMinuteMail.SecondsLeft}");
