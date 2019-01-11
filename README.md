@@ -1,7 +1,8 @@
 ## 10MinuteMail.net API client 
   [![Build status](https://ci.appveyor.com/api/projects/status/v4l997q4qyq88ily?svg=true)](https://ci.appveyor.com/project/unickq/10minutemail)
   [![Test status](http://teststatusbadge.azurewebsites.net/api/status/unickq/10minutemail)](https://ci.appveyor.com/project/unickq/10minutemail)
-  [![NuGet](http://flauschig.ch/nubadge.php?id=10minutesMail.net)](https://www.nuget.org/packages/10minutesMail.net)
+  [![NuGet](http://flauschig.ch/nubadge.php?id=10minuteMail.net)](https://www.nuget.org/packages/10minuteMail.net)
+
 
 #### Code example:
 ```cs
